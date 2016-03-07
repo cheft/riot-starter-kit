@@ -1,0 +1,34 @@
+{
+  "name": "riot-sui-starter-kit",
+  "version": "0.0.1",
+  "description": "riot sui mobile starter kit",
+
+  "dependencies": {
+    "riot": "^2.3.16"
+  },
+  "devDependencies": {
+    "css-loader": "^0.18.0",
+    "riotjs-loader": "^1.2.0",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server  --display-error-details --colors --content-base ./ --hot --host 0.0.0.0 --port 8888",
+    "build": "webpack --config ./webpack.prd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheft/riot-sui-starter-kit.git"
+  },
+  "keywords": [
+    "riot",
+    "sui"
+  ],
+  "author": "cheft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheft/riot-sui-starter-kit/issues"
+  },
+  "homepage": "https://github.com/cheft/riot-sui-starter-kit#readme"
+}

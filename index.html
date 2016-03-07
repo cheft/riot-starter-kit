@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Riot SUI Mobile</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+  <script src="//g.alicdn.com/sj/lib/zepto/zepto.min.js"></script>
+</head>
+
+<body>
+  <div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page" id="router">
+      <!-- 标题栏 -->
+      <header class="bar bar-nav">
+        <a class="icon icon-me pull-left open-panel"></a>
+        <h1 class="title">标题</h1>
+      </header>
+      <!-- 工具栏 -->
+      <nav class="bar bar-tab">
+        <a class="tab-item external active" href="#">
+          <span class="icon icon-home"></span>
+          <span class="tab-label">首页</span>
+        </a>
+        <a class="tab-item external" href="#">
+          <span class="icon icon-star"></span>
+          <span class="tab-label">收藏</span>
+        </a>
+        <a class="tab-item external" href="#">
+          <span class="icon icon-settings"></span>
+          <span class="tab-label">设置</span>
+        </a>
+      </nav>
+      <!-- 这里是页面内容区 -->
+      <div class="content">
+        <div class="content-block"><a href="#content" data-tag="test">跳转</div>
+      </div>
+    </div>
+    <!-- 其他的单个page内联页（如果有） -->
+    <div class="page" id="content">
+      <header class="bar bar-nav">
+        <a class="button button-link button-nav pull-left back" href="#router">
+          <span class="icon icon-left"></span>
+          返回
+        </a>
+          <h1 class='title'>路由</h1>
+          </header>
+          <div class="content" id="contentTag">
+
+          </div>
+        </div>
+      </div>
+      <script src="//g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js"></script>
+      <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
